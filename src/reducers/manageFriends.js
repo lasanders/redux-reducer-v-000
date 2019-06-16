@@ -5,7 +5,7 @@ export function manageFriends(state, action){
 
     switch (action.type) {
     case 'ADD_FRIEND':
-      return manageFriends, {friends + 1}
+      return manageFriends, {...friends, friends.friend + 1}
     default:
       return state;
   }
